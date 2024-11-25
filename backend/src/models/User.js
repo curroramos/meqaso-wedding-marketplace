@@ -8,6 +8,21 @@ const userSchema = new mongoose.Schema({
   userType: { type: String, enum: ['client', 'provider'], required: true },
   profilePicture: { type: String, default: null },
   googleId: { type: String, unique: true, sparse: true }, // Allow null for non-Google users
+
+  // Provider-specific fields
+  bio: { type: String, default: null }, // About the provider
+  categories: [{ type: String }], // Example: ['DJ', 'Band', 'Catering']
+  website: { type: String, default: null }, // Optional link to their personal site
+  socialLinks: {
+    facebook: { type: String, default: null },
+    instagram: { type: String, default: null },
+    twitter: { type: String, default: null },
+  },
+  location: { type: String, default: null }, // City or region they operate in
+  hourlyRate: { type: Number, default: null }, // Example: $50/hour
+
+  // Gallery or portfolio
+  gallery: [{ type: String }], // URLs to images or videos showcasing work
 }, { timestamps: true });
 
 // Hash the password before saving

@@ -15,6 +15,8 @@ const serviceSchema = new mongoose.Schema({
     coordinates: { type: [Number], required: true }, // [longitude, latitude]
   },
   radius: { type: Number, default: 0 }, // Availability radius in kilometers
+  rating: { type: Number, default: 0 }, // Average rating
+  reviewCount: { type: Number, default: 0 }, // Number of reviews
   photoUrl: { type: String, default: null },
 }, { timestamps: true });
 

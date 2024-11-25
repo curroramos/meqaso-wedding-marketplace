@@ -3,15 +3,23 @@ const User = require('../models/User');
 
 const protect = async (req, res, next) => {
   const token = req.headers.authorization?.split(' ')[1];
-  if (!token) return res.status(401).json({ message: 'Not authorized' });
+  if (!token) {
+    return res.status(401).json({ message: 'Not authorized, no token' });
+  }
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = await User.findById(decoded.id);
-    if (!req.user) throw new Error('User not found');
+    const user = await User.findById(decoded.id);
+
+    if (!user) {
+      return res.status(401).json({ message: 'Not authorized, user not found' });
+    }
+
+    req.user = user; // Attach the user object to the request
     next();
   } catch (error) {
-    res.status(401).json({ message: 'Not authorized' });
+    console.error('Authorization error:', error);
+    res.status(401).json({ message: 'Not authorized, token failed' });
   }
 };
 
