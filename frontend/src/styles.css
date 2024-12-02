@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #E9ECEF;
+  color: #343A40;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4C6EF5;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #F8F9FA;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #FFF;
+  width: 30px;
+  height: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  background-color: #FFF;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-link {
+  color: #F8F9FA;
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #F1C40F;
+}
+
+/* Hero Section */
+.container-fluid.bg-primary {
+  background: linear-gradient(135deg, #4C6EF5, #6A83F9);
+  color: #FFF;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 8px;
+}
+
+.btn-light {
+  background-color: #F1C40F;
+  color: #343A40;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
+.btn-light:hover {
+  background-color: #FF6B6B;
+  color: #FFF;
+}
+
+.btn-outline-light {
+  color: #FFF;
+  border-color: #FFF;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
+.btn-outline-light:hover {
+  background-color: #F1C40F;
+  color: #343A40;
+}
+
+/* Features Section */
+.features .col-md-4 {
+  background-color: #FFF;
+  border: 1px solid #E9ECEF;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.features .col-md-4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.features img {
+  margin-bottom: 15px;
+}
+
+.features h3 {
+  font-size: 1.5rem;
+  color: #4C6EF5;
+}
+
+/* Reviews Section */
+.blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #343A40;
+  background-color: #F8F9FA;
+  border-left: 4px solid #4C6EF5;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.blockquote-footer {
+  font-size: 0.9rem;
+  color: #6C757D;
+}
+
+/* How It Works Section */
+.list-group-item {
+  font-size: 1.1rem;
+  background: none;
+  padding: 10px 0;
+}
+
+.list-group-item strong {
+  color: #4C6EF5;
+}
+
+.list-group-numbered .list-group-item {
+  border-left: 4px solid #FF6B6B;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+/* Call to Action Section */
+.container-fluid.bg-dark {
+  background: linear-gradient(135deg, #343A40, #212529);
+  color: #F8F9FA;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 8px;
+}
+
+.container-fluid.bg-dark h2 {
+  color: #F1C40F;
+}
+
+.container-fluid.bg-dark .btn-light {
+  background-color: #FF6B6B;
+  color: #FFF;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+.container-fluid.bg-dark .btn-light:hover {
+  background-color: #F1C40F;
+  color: #343A40;
+}
+
+/* Footer */
+footer {
+  background-color: #343A40;
+  color: #FFF;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    padding: 10px 20px;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .navbar .container-fluid {
+    padding: 0 20px;
+    border-radius: 8px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    color: white;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler-icon::before {
+    top: -8px;
+  }
+  
+  .navbar-toggler-icon::after {
+    top: 8px;
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Navbar Links */
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Logout Link */
+  .navbar-nav .logout-link {
+    color: #ff6b6b; /* Highlight logout in red */
+    font-weight: bold;
+  }
+  
+  .navbar-nav .logout-link:hover {
+    color: #ff4c4c;
+    background-color: rgba(255, 107, 107, 0.2);
+    border-radius: 4px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 991px) {
+    .navbar {
+      padding: 10px;
+    }
+  
+    .navbar-nav .nav-link {
+      text-align: center;
+      margin: 5px 0;
+    }
+  }
+  
