@@ -102,3 +102,13 @@ exports.createService = async (req, res) => {
     });
   }
 };
+
+// Controller to fetch categories
+exports.getCategories = async (req, res) => {
+  try {
+    const categories = ["DJ", "Band", "Solo Artist"]; // Replace with dynamic data if needed
+    res.status(200).json(categories);
+  } catch (error) {
+    res.status(500).json({ message: "Failed to fetch categories", error: error.message });
+  }
+};

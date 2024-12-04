@@ -5,9 +5,9 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavigationBarComponent], // Import NavigationBarComponent here
+  imports: [RouterOutlet, NavigationBarComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'], 
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'frontend';

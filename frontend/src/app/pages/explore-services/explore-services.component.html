@@ -1,1 +1,66 @@
-<p>explore-services works!</p>
+<div class="explore-services">
+  <!-- Filters Section -->
+  <aside class="filters">
+    <h3>Filters</h3>
+    <div>
+      <label for="category">Category</label>
+      <select id="category" [(ngModel)]="filters.category">
+        <option value="">All</option>
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Price Range: ${{ filters.minPrice || 0 }} - ${{ filters.maxPrice || 1000 }}</label>
+      <input
+        type="range"
+        [(ngModel)]="filters.minPrice"
+        min="0"
+        max="1000"
+        step="10"
+      />
+      <input
+        type="range"
+        [(ngModel)]="filters.maxPrice"
+        min="0"
+        max="1000"
+        step="10"
+      />
+    </div>
+
+    <button (click)="applyFilters()">Apply Filters</button>
+    <button (click)="resetFilters()">Reset Filters</button>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input
+        type="text"
+        [(ngModel)]="searchQuery"
+        placeholder="Search services..."
+      />
+      <button (click)="search()">Search</button>
+    </div>
+
+    <!-- Services List -->
+    <div class="services-list">
+      <div class="service-card" *ngFor="let service of services">
+        <img *ngIf="service.photoUrl" [src]="service.photoUrl" alt="Service Image" />
+        <h4>{{ service.title }}</h4>
+        <p>{{ service.description }}</p>
+        <p><strong>Category:</strong> {{ service.category }}</p>
+        <p><strong>Price:</strong> ${{ service.price }}</p>
+        <p><strong>Rating:</strong> {{ service.rating }}</p>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <button [disabled]="currentPage <= 1" (click)="changePage(currentPage - 1)">Previous</button>
+      <span>Page {{ currentPage }} of {{ totalPages }}</span>
+      <button [disabled]="currentPage >= totalPages" (click)="changePage(currentPage + 1)">Next</button>
+    </div>
+  </main>
+</div>
