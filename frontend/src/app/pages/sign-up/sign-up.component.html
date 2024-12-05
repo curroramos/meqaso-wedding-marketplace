@@ -1,0 +1,42 @@
+<div class="sign-up-container">
+    <h2>Sign Up</h2>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" formControlName="name" />
+        <div *ngIf="signUpForm.get('name')?.invalid && signUpForm.get('name')?.touched">
+          Name is required.
+        </div>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" formControlName="email" />
+        <div *ngIf="signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched">
+          Enter a valid email.
+        </div>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input id="password" type="password" formControlName="password" />
+        <div *ngIf="signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched">
+          Password must be at least 6 characters long.
+        </div>
+      </div>
+      <div>
+        <label for="userType">User Type:</label>
+        <select id="userType" formControlName="userType">
+          <option value="">Select a user type</option>
+          <option value="client">Client</option>
+          <option value="provider">Provider</option>
+        </select>
+        <div *ngIf="signUpForm.get('userType')?.invalid && signUpForm.get('userType')?.touched">
+          User type is required.
+        </div>
+      </div>
+      <button type="submit" [disabled]="signUpForm.invalid">Register</button>
+    </form>
+    <div *ngIf="registrationError" class="error-message">
+      {{ registrationError }}
+    </div>
+  </div>
+  
