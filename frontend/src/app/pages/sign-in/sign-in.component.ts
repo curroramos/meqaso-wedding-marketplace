@@ -2,7 +2,8 @@ import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
-import { AuthService, GoogleLoginResponse } from '../../services/auth.service';
+import { AuthService } from '../../services/auth.service';
+import { GoogleLoginResponse, SignInService } from '../../services/sign-in.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -20,6 +21,7 @@ export class SignInComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private authService: AuthService,
+    private signInService: SignInService,
     private router: Router,
     @Inject(PLATFORM_ID) private platformId: object
   ) {
@@ -31,6 +33,9 @@ export class SignInComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (this.authService.isLoggedIn()) {
+      this.router.navigate(['/dashboard']); // Redirect to dashboard
+    }
     // Only run this logic in the browser
     if (isPlatformBrowser(this.platformId)) {
       this.loadGoogleScript();
@@ -50,7 +55,7 @@ export class SignInComponent implements OnInit {
     const { email, password } = this.loginForm.value;
 
     console.log('Login Payload:', { email }); // Log payload (mask sensitive data)
-    this.authService.login(email, password).subscribe({
+    this.signInService.login(email, password).subscribe({
       next: (response) => {
         console.log('Login Successful:', response); // Log success response
         const { token } = response; // Extract token from response
@@ -104,7 +109,7 @@ export class SignInComponent implements OnInit {
       console.log('Google Credential Received:', response.credential);
   
       // Send Google credential (JWT token) to the backend for authentication
-      this.authService.googleLogin({ tokenId: response.credential }).subscribe({
+      this.signInService.googleLogin({ tokenId: response.credential }).subscribe({
         next: (serverResponse: GoogleLoginResponse) => {
           const { token } = serverResponse; // Extract token from response
           this.authService.saveToken(token); // Save token to localStorage
