@@ -1,0 +1,201 @@
+provider,title,description,category,price,location_type,location_coordinates,radius,rating,reviewCount,photoUrl,_id,createdAt,updatedAt,__v
+4b7fbc,Party Beats,Classical music performed by seasoned professionals.,DJ,344,Point,"[7.7208, 41.4302]",47,1,56,,5c7e29,2024-08-14T04:32:53.968210,2024-08-14T04:32:53.968210,0
+77d866,Fun Tunes,Classical music performed by seasoned professionals.,Karaoke Service,610,Point,"[-169.2981, -57.523]",16,0,77,,101a7d,2023-12-18T04:32:53.968262,2023-12-18T04:32:53.968262,0
+790d8f,Rock n' Rollers,An energetic band that brings the house down!,Karaoke Service,702,Point,"[-51.4839, 67.1688]",35,5,79,,49c018,2024-07-17T04:32:53.968277,2024-07-17T04:32:53.968277,0
+100c06,Melody Makers,Classical music performed by seasoned professionals.,Karaoke Service,765,Point,"[-42.9677, -48.8501]",28,0,91,,8df026,2024-07-21T04:32:53.968291,2024-07-21T04:32:53.968291,0
+66f4cc,Party Beats,Classical music performed by seasoned professionals.,Solo Artist,1171,Point,"[94.8115, -24.8215]",8,4,47,,3cde53,2024-04-16T04:32:53.968304,2024-04-16T04:32:53.968304,0
+819bac,Fun Tunes,Karaoke services to spice up your events.,DJ,561,Point,"[101.278, -28.7881]",20,5,5,,52f4d7,2024-09-26T04:32:53.968318,2024-09-26T04:32:53.968318,0
+43944e,Party Beats,Karaoke services to spice up your events.,Karaoke Service,1177,Point,"[-176.6084, 33.2271]",39,3,81,,91d6f3,2024-03-03T04:32:53.968331,2024-03-03T04:32:53.968331,0
+569fe0,Fun Tunes,Karaoke services to spice up your events.,Orchestra,1255,Point,"[48.2612, 69.4332]",49,2,88,,82d453,2024-10-12T04:32:53.968346,2024-10-12T04:32:53.968346,0
+795e5f,Melody Makers,An energetic band that brings the house down!,Band,673,Point,"[149.5889, -77.4542]",22,2,61,,31bb42,2024-08-28T04:32:53.968363,2024-08-28T04:32:53.968363,0
+19d0d0,Melody Makers,A solo artist with a golden voice.,DJ,1448,Point,"[78.5321, 88.0254]",23,4,38,,41749a,2024-01-04T04:32:53.968376,2024-01-04T04:32:53.968376,0
+168424,Melody Makers,Karaoke services to spice up your events.,Band,957,Point,"[-63.3089, -85.5341]",39,3,89,,703087,2024-05-04T04:32:53.968388,2024-05-04T04:32:53.968388,0
+7091f6,Party Beats,A DJ with beats to make you dance all night.,Solo Artist,318,Point,"[42.9616, -86.4391]",47,0,92,,65c554,2024-09-30T04:32:53.968400,2024-09-30T04:32:53.968400,0
+493aff,Rock n' Rollers,Karaoke services to spice up your events.,Band,856,Point,"[-76.5197, -27.1175]",44,2,75,,2124fe,2023-12-15T04:32:53.968412,2023-12-15T04:32:53.968412,0
+24f0e7,Party Beats,A solo artist with a golden voice.,Orchestra,410,Point,"[-168.5102, 38.1769]",24,3,49,,6b1ca2,2024-05-06T04:32:53.968424,2024-05-06T04:32:53.968424,0
+470241,Fun Tunes,A solo artist with a golden voice.,Band,490,Point,"[-148.8359, 85.1612]",37,4,89,,2ca394,2024-08-19T04:32:53.968435,2024-08-19T04:32:53.968435,0
+1a1a18,Melody Makers,A DJ with beats to make you dance all night.,Orchestra,501,Point,"[59.3247, -84.9339]",5,3,51,,276b42,2024-04-14T04:32:53.968447,2024-04-14T04:32:53.968447,0
+7de06d,Party Beats,A solo artist with a golden voice.,Band,784,Point,"[-171.7836, -37.2769]",12,0,92,,2dd297,2024-06-26T04:32:53.968465,2024-06-26T04:32:53.968465,0
+44381c,Classical Notes,Classical music performed by seasoned professionals.,Band,1087,Point,"[-163.5214, -80.4559]",11,1,82,,95b471,2024-06-10T04:32:53.968483,2024-06-10T04:32:53.968483,0
+565f0e,Melody Makers,Classical music performed by seasoned professionals.,Karaoke Service,546,Point,"[134.9207, 61.9838]",25,2,83,,2880a7,2024-02-07T04:32:53.968501,2024-02-07T04:32:53.968501,0
+44f49f,Classical Notes,A DJ with beats to make you dance all night.,Orchestra,1383,Point,"[113.8246, 46.8069]",8,5,32,,73f2ff,2024-04-17T04:32:53.968513,2024-04-17T04:32:53.968513,0
+39cf43,Party Beats,An energetic band that brings the house down!,DJ,1448,Point,"[-31.8557, -55.111]",7,5,46,,241306,2024-05-21T04:32:53.968529,2024-05-21T04:32:53.968529,0
+723526,Party Beats,Classical music performed by seasoned professionals.,Orchestra,369,Point,"[-135.8158, 75.0767]",28,3,45,,8910ab,2023-12-29T04:32:53.968547,2023-12-29T04:32:53.968547,0
+2a816d,Fun Tunes,Classical music performed by seasoned professionals.,Solo Artist,1048,Point,"[140.2994, 79.1069]",17,5,66,,6e155d,2024-06-20T04:32:53.968566,2024-06-20T04:32:53.968566,0
+8c8ec9,Melody Makers,A solo artist with a golden voice.,Band,594,Point,"[-147.0913, -45.5359]",50,2,12,,7e8923,2024-07-17T04:32:53.968583,2024-07-17T04:32:53.968583,0
+91ddf6,Fun Tunes,A DJ with beats to make you dance all night.,DJ,320,Point,"[-164.2142, -41.1667]",35,0,54,,20236d,2024-04-25T04:32:53.968595,2024-04-25T04:32:53.968595,0
+6acdf1,Party Beats,An energetic band that brings the house down!,Orchestra,923,Point,"[-61.0155, 80.1919]",6,2,31,,4218c7,2024-03-17T04:32:53.968607,2024-03-17T04:32:53.968607,0
+6e8caa,Party Beats,Classical music performed by seasoned professionals.,Band,230,Point,"[134.3986, -85.2532]",44,5,22,,50d937,2024-06-10T04:32:53.968618,2024-06-10T04:32:53.968618,0
+875ba5,Party Beats,Karaoke services to spice up your events.,Band,1223,Point,"[-96.6896, -28.3562]",13,1,40,,56757f,2024-08-15T04:32:53.968630,2024-08-15T04:32:53.968630,0
+2d264c,Rock n' Rollers,Karaoke services to spice up your events.,Orchestra,1297,Point,"[118.0237, 21.8313]",37,3,63,,6f36ef,2024-05-11T04:32:53.968641,2024-05-11T04:32:53.968641,0
+9452cd,Melody Makers,A solo artist with a golden voice.,Band,1177,Point,"[1.0919, 7.9639]",35,2,28,,58a183,2024-01-24T04:32:53.968653,2024-01-24T04:32:53.968653,0
+599672,Fun Tunes,A solo artist with a golden voice.,Karaoke Service,648,Point,"[-171.3323, -36.8898]",20,4,94,,731d66,2024-09-29T04:32:53.968665,2024-09-29T04:32:53.968665,0
+2fb738,Party Beats,An energetic band that brings the house down!,DJ,1349,Point,"[-128.6191, -73.5641]",28,5,34,,351ae7,2024-07-22T04:32:53.968676,2024-07-22T04:32:53.968676,0
+618a0c,Classical Notes,A DJ with beats to make you dance all night.,Solo Artist,655,Point,"[-86.4899, 10.6124]",18,3,22,,6efd3b,2024-02-15T04:32:53.968689,2024-02-15T04:32:53.968689,0
+519363,Classical Notes,An energetic band that brings the house down!,Solo Artist,1115,Point,"[-139.5877, -18.6556]",25,3,37,,1cf765,2023-12-16T04:32:53.968701,2023-12-16T04:32:53.968701,0
+58c3b8,Fun Tunes,Karaoke services to spice up your events.,DJ,302,Point,"[-106.6365, -15.56]",14,5,68,,85c810,2024-01-22T04:32:53.968713,2024-01-22T04:32:53.968713,0
+7d44ef,Melody Makers,Classical music performed by seasoned professionals.,Karaoke Service,1366,Point,"[129.5699, 64.3369]",21,3,8,,4f5e12,2024-07-09T04:32:53.968725,2024-07-09T04:32:53.968725,0
+7aa476,Classical Notes,Karaoke services to spice up your events.,Solo Artist,1486,Point,"[-33.3886, 71.4299]",17,5,74,,137f0f,2024-07-18T04:32:53.968736,2024-07-18T04:32:53.968736,0
+8ca8e5,Fun Tunes,An energetic band that brings the house down!,Band,539,Point,"[107.5487, -56.3061]",38,2,30,,141a0e,2024-06-29T04:32:53.968749,2024-06-29T04:32:53.968749,0
+8cb488,Party Beats,A DJ with beats to make you dance all night.,DJ,264,Point,"[-37.4826, -46.1901]",36,0,31,,44250b,2024-11-14T04:32:53.968760,2024-11-14T04:32:53.968760,0
+1ad72a,Classical Notes,A DJ with beats to make you dance all night.,Solo Artist,656,Point,"[-43.7232, 58.1257]",32,3,56,,330dbe,2023-12-17T04:32:53.968772,2023-12-17T04:32:53.968772,0
+8f190e,Party Beats,Karaoke services to spice up your events.,Karaoke Service,604,Point,"[119.8572, 0.8568]",39,5,59,,675270,2024-08-18T04:32:53.968783,2024-08-18T04:32:53.968783,0
+613a43,Melody Makers,An energetic band that brings the house down!,Karaoke Service,356,Point,"[-117.3683, -6.5217]",21,1,69,,4258b7,2024-10-02T04:32:53.968795,2024-10-02T04:32:53.968795,0
+332a6d,Rock n' Rollers,A DJ with beats to make you dance all night.,Band,1054,Point,"[-51.7712, -10.7306]",28,1,58,,948164,2024-01-30T04:32:53.968805,2024-01-30T04:32:53.968805,0
+6bb962,Classical Notes,A solo artist with a golden voice.,Orchestra,729,Point,"[35.5204, 55.0598]",44,1,48,,894eea,2024-08-20T04:32:53.968817,2024-08-20T04:32:53.968817,0
+5ab69a,Party Beats,Karaoke services to spice up your events.,Solo Artist,800,Point,"[-91.7613, -16.9579]",40,4,4,,2a2bd2,2024-11-17T04:32:53.968828,2024-11-17T04:32:53.968828,0
+1d7585,Fun Tunes,A DJ with beats to make you dance all night.,Orchestra,268,Point,"[-177.9308, -61.3661]",49,5,94,,463336,2023-12-09T04:32:53.968839,2023-12-09T04:32:53.968839,0
+706442,Melody Makers,An energetic band that brings the house down!,DJ,714,Point,"[36.6159, -46.939]",23,3,64,,698664,2024-06-15T04:32:53.968851,2024-06-15T04:32:53.968851,0
+5b0e00,Fun Tunes,An energetic band that brings the house down!,Band,630,Point,"[-168.6424, -17.0373]",22,3,64,,4ba404,2024-10-03T04:32:53.968869,2024-10-03T04:32:53.968869,0
+77250b,Rock n' Rollers,A DJ with beats to make you dance all night.,Solo Artist,1500,Point,"[-44.5338, 56.254]",11,5,70,,446de3,2024-02-16T04:32:53.968884,2024-02-16T04:32:53.968884,0
+32bb41,Melody Makers,A DJ with beats to make you dance all night.,Solo Artist,533,Point,"[-87.6143, -0.0639]",43,0,32,,6a6a16,2024-08-31T04:32:53.968896,2024-08-31T04:32:53.968896,0
+3e626f,Rock n' Rollers,Karaoke services to spice up your events.,Orchestra,1108,Point,"[-127.3458, -66.0085]",30,0,80,,833ead,2024-06-01T04:32:53.968907,2024-06-01T04:32:53.968907,0
+7fed1d,Melody Makers,A DJ with beats to make you dance all night.,Band,1006,Point,"[-66.7048, -29.4879]",48,0,15,,5e424c,2024-04-11T04:32:53.968918,2024-04-11T04:32:53.968918,0
+5d5dc6,Melody Makers,A solo artist with a golden voice.,Band,1386,Point,"[-92.5231, 29.3618]",48,1,94,,24b97a,2024-03-06T04:32:53.968929,2024-03-06T04:32:53.968929,0
+656299,Party Beats,Classical music performed by seasoned professionals.,Solo Artist,889,Point,"[-118.9027, -72.7619]",45,0,100,,2d2afe,2024-08-12T04:32:53.968957,2024-08-12T04:32:53.968957,0
+493b27,Party Beats,An energetic band that brings the house down!,Solo Artist,427,Point,"[164.4661, -3.7558]",39,5,100,,183693,2024-10-09T04:32:53.968970,2024-10-09T04:32:53.968970,0
+6fea65,Party Beats,Karaoke services to spice up your events.,Orchestra,1444,Point,"[-77.783, 25.7696]",31,1,82,,41c87a,2024-03-05T04:32:53.968981,2024-03-05T04:32:53.968981,0
+6f4558,Party Beats,A DJ with beats to make you dance all night.,Karaoke Service,533,Point,"[23.5928, 19.9591]",20,2,49,,844a1c,2024-11-22T04:32:53.968992,2024-11-22T04:32:53.968992,0
+58d0cb,Melody Makers,Karaoke services to spice up your events.,Orchestra,1106,Point,"[-26.6708, 59.2061]",9,1,35,,690148,2024-06-07T04:32:53.969004,2024-06-07T04:32:53.969004,0
+667afd,Fun Tunes,A DJ with beats to make you dance all night.,Band,1364,Point,"[-147.0941, -0.8832]",9,5,49,,3e7699,2024-06-12T04:32:53.969015,2024-06-12T04:32:53.969015,0
+571f48,Fun Tunes,Karaoke services to spice up your events.,Solo Artist,1066,Point,"[-45.7775, -38.2941]",29,2,64,,8b8466,2024-11-27T04:32:53.969026,2024-11-27T04:32:53.969026,0
+95cbaf,Party Beats,A DJ with beats to make you dance all night.,DJ,746,Point,"[3.1234, 50.5714]",32,4,31,,6e8b6d,2024-07-04T04:32:53.969037,2024-07-04T04:32:53.969037,0
+2fa6e7,Classical Notes,Classical music performed by seasoned professionals.,Band,439,Point,"[167.537, -55.0502]",12,2,7,,986628,2024-08-08T04:32:53.969048,2024-08-08T04:32:53.969048,0
+1e8fb8,Fun Tunes,Karaoke services to spice up your events.,Solo Artist,1478,Point,"[-127.1675, 46.1179]",40,3,18,,405b3b,2024-10-20T04:32:53.969060,2024-10-20T04:32:53.969060,0
+37e8e5,Melody Makers,A DJ with beats to make you dance all night.,DJ,372,Point,"[-155.0608, -35.5592]",38,3,78,,5b9ef2,2024-07-10T04:32:53.969071,2024-07-10T04:32:53.969071,0
+3abf46,Melody Makers,A solo artist with a golden voice.,Solo Artist,1390,Point,"[76.4086, -25.8904]",7,5,32,,2bd5ec,2024-06-14T04:32:53.969082,2024-06-14T04:32:53.969082,0
+92f893,Fun Tunes,A DJ with beats to make you dance all night.,Solo Artist,1079,Point,"[48.5575, -7.5231]",43,1,1,,1518f8,2024-03-05T04:32:53.969095,2024-03-05T04:32:53.969095,0
+5bd53d,Classical Notes,An energetic band that brings the house down!,DJ,466,Point,"[-77.4478, 51.3661]",37,5,82,,5dd086,2024-03-16T04:32:53.969107,2024-03-16T04:32:53.969107,0
+395b6c,Rock n' Rollers,Classical music performed by seasoned professionals.,Solo Artist,745,Point,"[-27.4642, -30.3468]",6,0,6,,8c39b0,2024-07-06T04:32:53.969118,2024-07-06T04:32:53.969118,0
+8fca75,Classical Notes,Classical music performed by seasoned professionals.,Band,1471,Point,"[-44.5502, -59.0104]",27,5,85,,5e83d3,2024-11-01T04:32:53.969129,2024-11-01T04:32:53.969129,0
+981afa,Party Beats,A solo artist with a golden voice.,Karaoke Service,586,Point,"[-62.8542, -40.9392]",36,0,42,,50e4b7,2024-05-17T04:32:53.969140,2024-05-17T04:32:53.969140,0
+5ad626,Fun Tunes,Classical music performed by seasoned professionals.,Orchestra,625,Point,"[-22.8586, 36.6952]",16,1,97,,81fa34,2024-11-19T04:32:53.969151,2024-11-19T04:32:53.969151,0
+3c19d3,Fun Tunes,Classical music performed by seasoned professionals.,Band,347,Point,"[-3.4376, 52.1189]",41,3,62,,34223a,2024-09-03T04:32:53.969168,2024-09-03T04:32:53.969168,0
+32a93e,Party Beats,A solo artist with a golden voice.,Band,453,Point,"[112.4771, -37.7926]",9,2,1,,5e14ce,2024-07-29T04:32:53.969184,2024-07-29T04:32:53.969184,0
+251b2c,Party Beats,Classical music performed by seasoned professionals.,DJ,822,Point,"[41.0073, 68.9135]",50,2,31,,11d4fa,2024-01-29T04:32:53.969196,2024-01-29T04:32:53.969196,0
+92fcb6,Melody Makers,An energetic band that brings the house down!,Karaoke Service,497,Point,"[-15.8515, -65.1453]",18,2,84,,2a4159,2024-09-27T04:32:53.969208,2024-09-27T04:32:53.969208,0
+69ec20,Rock n' Rollers,Classical music performed by seasoned professionals.,DJ,1316,Point,"[-110.6604, 9.8146]",10,3,73,,1beccc,2023-12-29T04:32:53.969220,2023-12-29T04:32:53.969220,0
+2a8d0c,Party Beats,An energetic band that brings the house down!,Band,661,Point,"[119.1011, 28.2124]",6,3,43,,3d5159,2024-02-02T04:32:53.969232,2024-02-02T04:32:53.969232,0
+794db9,Melody Makers,An energetic band that brings the house down!,Orchestra,379,Point,"[37.5212, 40.0445]",49,5,98,,838df4,2024-06-30T04:32:53.969244,2024-06-30T04:32:53.969244,0
+1c3a99,Party Beats,Karaoke services to spice up your events.,Band,696,Point,"[13.0208, -59.6822]",26,4,75,,6fac78,2024-03-12T04:32:53.969256,2024-03-12T04:32:53.969256,0
+613411,Melody Makers,A DJ with beats to make you dance all night.,DJ,589,Point,"[137.3664, 80.4331]",40,4,7,,7deafc,2024-11-04T04:32:53.969267,2024-11-04T04:32:53.969267,0
+134f5b,Melody Makers,An energetic band that brings the house down!,Band,421,Point,"[-98.027, 67.8499]",21,3,33,,11aa72,2023-12-29T04:32:53.969279,2023-12-29T04:32:53.969279,0
+3a0d4f,Fun Tunes,A solo artist with a golden voice.,Karaoke Service,265,Point,"[-113.3358, -18.2609]",35,2,22,,6a4cf7,2024-07-14T04:32:53.969292,2024-07-14T04:32:53.969292,0
+5c1f3b,Party Beats,A solo artist with a golden voice.,Band,429,Point,"[146.528, -47.6764]",10,5,50,,8b899f,2024-08-06T04:32:53.969304,2024-08-06T04:32:53.969304,0
+61c9fc,Party Beats,A solo artist with a golden voice.,Orchestra,1495,Point,"[-103.7061, -48.7798]",14,2,10,,8018e9,2024-08-17T04:32:53.969315,2024-08-17T04:32:53.969315,0
+9841c6,Party Beats,Karaoke services to spice up your events.,Karaoke Service,486,Point,"[-166.1555, -26.7258]",41,3,89,,1e8953,2024-04-07T04:32:53.969326,2024-04-07T04:32:53.969326,0
+5ee0fe,Melody Makers,A solo artist with a golden voice.,Band,1108,Point,"[-145.8647, -52.7461]",28,5,53,,8baccd,2024-09-14T04:32:53.969338,2024-09-14T04:32:53.969338,0
+8aabb5,Rock n' Rollers,Classical music performed by seasoned professionals.,Orchestra,579,Point,"[130.1329, 66.347]",36,2,9,,973669,2024-06-13T04:32:53.969349,2024-06-13T04:32:53.969349,0
+293419,Classical Notes,An energetic band that brings the house down!,Solo Artist,482,Point,"[-59.7548, -27.9832]",21,2,26,,46a364,2024-10-12T04:32:53.969360,2024-10-12T04:32:53.969360,0
+522804,Party Beats,A DJ with beats to make you dance all night.,Solo Artist,562,Point,"[-108.1098, 87.848]",8,1,58,,8577e2,2024-08-02T04:32:53.969371,2024-08-02T04:32:53.969371,0
+93e4b6,Melody Makers,Karaoke services to spice up your events.,Karaoke Service,968,Point,"[-46.6402, -3.42]",30,1,58,,381ffc,2024-07-20T04:32:53.969382,2024-07-20T04:32:53.969382,0
+417578,Classical Notes,An energetic band that brings the house down!,Karaoke Service,340,Point,"[39.0801, -2.7079]",22,4,41,,6e5bee,2024-03-16T04:32:53.969393,2024-03-16T04:32:53.969393,0
+81ab74,Party Beats,A solo artist with a golden voice.,Band,535,Point,"[-15.1874, -54.2332]",46,1,85,,722672,2024-11-06T04:32:53.969404,2024-11-06T04:32:53.969404,0
+1780eb,Classical Notes,Classical music performed by seasoned professionals.,Solo Artist,539,Point,"[75.9712, 63.0407]",5,0,1,,6551bb,2024-01-21T04:32:53.969416,2024-01-21T04:32:53.969416,0
+9454f4,Party Beats,Classical music performed by seasoned professionals.,Orchestra,975,Point,"[-128.599, 22.2579]",47,4,36,,6b4ba8,2023-12-23T04:32:53.969427,2023-12-23T04:32:53.969427,0
+90af2d,Fun Tunes,Karaoke services to spice up your events.,DJ,892,Point,"[151.7172, 38.3888]",34,3,17,,30a087,2024-01-09T04:32:53.969438,2024-01-09T04:32:53.969438,0
+21138d,Rock n' Rollers,Karaoke services to spice up your events.,Band,1197,Point,"[162.0093, 75.6011]",19,3,94,,5db71d,2024-03-28T04:32:53.969449,2024-03-28T04:32:53.969449,0
+4ed215,Classical Notes,An energetic band that brings the house down!,Solo Artist,387,Point,"[93.6811, -73.7479]",15,4,81,,3f2049,2024-01-10T04:32:53.969460,2024-01-10T04:32:53.969460,0
+13776e,Party Beats,Karaoke services to spice up your events.,Band,1487,Point,"[-140.2539, -27.8664]",48,5,90,,240868,2024-11-28T04:32:53.969472,2024-11-28T04:32:53.969472,0
+39504c,Melody Makers,Classical music performed by seasoned professionals.,Band,729,Point,"[-18.6375, 42.8162]",40,5,85,,2cb6cf,2024-09-27T04:32:53.969483,2024-09-27T04:32:53.969483,0
+2c87a5,Party Beats,A DJ with beats to make you dance all night.,Band,1500,Point,"[-14.5827, -13.3219]",37,1,41,,2718a7,2023-12-21T04:32:53.969495,2023-12-21T04:32:53.969495,0
+377c0f,Party Beats,A DJ with beats to make you dance all night.,Solo Artist,1337,Point,"[-64.92, 85.4063]",37,2,61,,7b07f3,2024-04-05T04:32:53.969505,2024-04-05T04:32:53.969505,0
+8f8a4c,Fun Tunes,Classical music performed by seasoned professionals.,Karaoke Service,1058,Point,"[-75.1758, -38.5275]",11,2,56,,925495,2024-07-11T04:32:53.969518,2024-07-11T04:32:53.969518,0
+744beb,Rock n' Rollers,An energetic band that brings the house down!,Solo Artist,777,Point,"[-118.0133, 23.0989]",43,5,19,,953aa3,2024-10-31T04:32:53.969530,2024-10-31T04:32:53.969530,0
+6033dc,Rock n' Rollers,Classical music performed by seasoned professionals.,Band,638,Point,"[-178.999, -65.7644]",36,1,16,,5f98e8,2024-05-26T04:32:53.969544,2024-05-26T04:32:53.969544,0
+3e3ed7,Melody Makers,A DJ with beats to make you dance all night.,Orchestra,1368,Point,"[14.8775, -79.2771]",6,5,33,,10f30d,2024-01-26T04:32:53.969563,2024-01-26T04:32:53.969563,0
+3d379a,Party Beats,A DJ with beats to make you dance all night.,Band,255,Point,"[-109.7668, -75.7784]",16,5,67,,3616d6,2024-02-10T04:32:53.969579,2024-02-10T04:32:53.969579,0
+3fb9f5,Party Beats,An energetic band that brings the house down!,Karaoke Service,1037,Point,"[-159.5596, 47.7414]",50,2,45,,589603,2024-10-13T04:32:53.969590,2024-10-13T04:32:53.969590,0
+4c110b,Fun Tunes,Karaoke services to spice up your events.,DJ,946,Point,"[-100.2594, 22.1974]",48,2,76,,811e39,2024-05-07T04:32:53.969602,2024-05-07T04:32:53.969602,0
+3926e2,Classical Notes,Karaoke services to spice up your events.,Karaoke Service,1111,Point,"[131.458, 16.3493]",41,3,6,,2fef5f,2024-06-25T04:32:53.969614,2024-06-25T04:32:53.969614,0
+15f372,Fun Tunes,An energetic band that brings the house down!,Orchestra,803,Point,"[-22.6132, -85.9517]",29,2,22,,4292e0,2024-05-26T04:32:53.969632,2024-05-26T04:32:53.969632,0
+9321ad,Rock n' Rollers,A DJ with beats to make you dance all night.,Karaoke Service,1453,Point,"[13.8847, -67.959]",42,1,32,,60f1e6,2024-10-10T04:32:53.969650,2024-10-10T04:32:53.969650,0
+71478c,Fun Tunes,A solo artist with a golden voice.,Karaoke Service,1347,Point,"[144.8812, 27.1549]",37,2,29,,6a6099,2024-03-28T04:32:53.969668,2024-03-28T04:32:53.969668,0
+603b81,Party Beats,An energetic band that brings the house down!,Karaoke Service,1434,Point,"[149.9302, -25.0112]",19,4,25,,6e9431,2024-03-27T04:32:53.969681,2024-03-27T04:32:53.969681,0
+18e30e,Fun Tunes,A DJ with beats to make you dance all night.,Band,443,Point,"[164.4197, -68.8783]",40,4,23,,5552fe,2024-06-03T04:32:53.969694,2024-06-03T04:32:53.969694,0
+1f7b37,Classical Notes,Classical music performed by seasoned professionals.,Solo Artist,1189,Point,"[-33.262, -61.3428]",36,1,78,,963a2d,2024-03-25T04:32:53.969706,2024-03-25T04:32:53.969706,0
+97d38c,Melody Makers,A solo artist with a golden voice.,Orchestra,217,Point,"[105.781, -89.0659]",46,0,58,,55db76,2024-04-18T04:32:53.969717,2024-04-18T04:32:53.969717,0
+147835,Fun Tunes,A DJ with beats to make you dance all night.,Solo Artist,696,Point,"[88.5954, 44.6167]",24,2,81,,15648f,2024-04-16T04:32:53.969729,2024-04-16T04:32:53.969729,0
+4c36b5,Classical Notes,Karaoke services to spice up your events.,Orchestra,1337,Point,"[-1.0282, -31.9388]",35,2,41,,94d13e,2024-02-02T04:32:53.969741,2024-02-02T04:32:53.969741,0
+121099,Rock n' Rollers,A DJ with beats to make you dance all night.,Karaoke Service,817,Point,"[-166.0557, 47.276]",26,5,42,,1eca64,2024-05-19T04:32:53.969753,2024-05-19T04:32:53.969753,0
+41dfe0,Classical Notes,Karaoke services to spice up your events.,Karaoke Service,353,Point,"[-99.8364, -1.5671]",12,5,20,,60db0c,2024-05-21T04:32:53.969764,2024-05-21T04:32:53.969764,0
+f7704,Classical Notes,An energetic band that brings the house down!,Band,467,Point,"[-145.6709, -78.6809]",32,2,68,,220f29,2024-10-04T04:32:53.969775,2024-10-04T04:32:53.969775,0
+1e6766,Melody Makers,A solo artist with a golden voice.,DJ,357,Point,"[34.28, -87.5726]",32,5,62,,856b6a,2024-08-24T04:32:53.969786,2024-08-24T04:32:53.969786,0
+15219a,Party Beats,An energetic band that brings the house down!,Solo Artist,443,Point,"[-107.5168, 28.9916]",20,0,90,,410010,2024-06-04T04:32:53.969798,2024-06-04T04:32:53.969798,0
+88524c,Melody Makers,Classical music performed by seasoned professionals.,Karaoke Service,264,Point,"[-28.1539, -0.1476]",22,0,72,,374989,2024-03-13T04:32:53.969809,2024-03-13T04:32:53.969809,0
+95cc64,Fun Tunes,Karaoke services to spice up your events.,Orchestra,391,Point,"[138.9378, -5.4512]",36,4,14,,78da84,2024-02-25T04:32:53.969820,2024-02-25T04:32:53.969820,0
+95fcd7,Party Beats,A DJ with beats to make you dance all night.,Band,519,Point,"[172.3857, -22.6784]",17,5,78,,2cf108,2024-07-13T04:32:53.969832,2024-07-13T04:32:53.969832,0
+21428f,Classical Notes,Classical music performed by seasoned professionals.,Karaoke Service,1023,Point,"[-66.8988, 74.1462]",29,5,53,,654621,2024-08-03T04:32:53.969843,2024-08-03T04:32:53.969843,0
+7ed76c,Party Beats,Classical music performed by seasoned professionals.,Karaoke Service,222,Point,"[136.6116, 61.5351]",42,1,93,,1ab7d9,2024-04-08T04:32:53.969854,2024-04-08T04:32:53.969854,0
+85f421,Rock n' Rollers,An energetic band that brings the house down!,Orchestra,368,Point,"[34.8509, -45.5995]",17,0,64,,784b20,2024-01-23T04:32:53.969867,2024-01-23T04:32:53.969867,0
+5d719f,Rock n' Rollers,Classical music performed by seasoned professionals.,Solo Artist,570,Point,"[-33.7343, 13.316]",50,2,55,,1ab8a5,2024-09-06T04:32:53.969888,2024-09-06T04:32:53.969888,0
+8fbcac,Melody Makers,A DJ with beats to make you dance all night.,Karaoke Service,502,Point,"[-70.499, 15.1673]",39,1,52,,65ae7b,2024-01-16T04:32:53.969901,2024-01-16T04:32:53.969901,0
+3906c8,Melody Makers,A DJ with beats to make you dance all night.,Solo Artist,699,Point,"[84.4601, 19.2877]",29,1,76,,7bfdce,2024-04-07T04:32:53.969913,2024-04-07T04:32:53.969913,0
+4d64ac,Melody Makers,A DJ with beats to make you dance all night.,Band,831,Point,"[27.5989, -25.7614]",30,0,75,,7d7edd,2024-11-27T04:32:53.969924,2024-11-27T04:32:53.969924,0
+244be5,Rock n' Rollers,A solo artist with a golden voice.,Band,1481,Point,"[152.0314, 18.6466]",45,4,90,,881bc9,2024-04-07T04:32:53.969942,2024-04-07T04:32:53.969942,0
+645aff,Party Beats,Classical music performed by seasoned professionals.,DJ,948,Point,"[-136.8527, -9.6009]",16,0,100,,22b118,2024-09-26T04:32:53.969957,2024-09-26T04:32:53.969957,0
+6b78f7,Rock n' Rollers,Classical music performed by seasoned professionals.,DJ,1002,Point,"[142.3117, 21.4342]",36,5,97,,72646e,2024-04-21T04:32:53.969968,2024-04-21T04:32:53.969968,0
+7c1337,Fun Tunes,Classical music performed by seasoned professionals.,DJ,418,Point,"[17.3818, 47.3588]",27,5,15,,52e125,2024-03-14T04:32:53.969984,2024-03-14T04:32:53.969984,0
+48ae79,Rock n' Rollers,A DJ with beats to make you dance all night.,Solo Artist,1450,Point,"[-112.4277, 77.1128]",35,1,44,,8e89c6,2024-11-01T04:32:53.970000,2024-11-01T04:32:53.970000,0
+98790d,Melody Makers,A solo artist with a golden voice.,Solo Artist,1166,Point,"[134.7751, 10.4178]",6,2,86,,148448,2024-10-25T04:32:53.970012,2024-10-25T04:32:53.970012,0
+485902,Rock n' Rollers,A solo artist with a golden voice.,Solo Artist,1432,Point,"[157.2537, 89.7231]",32,3,85,,145d6a,2024-10-30T04:32:53.970023,2024-10-30T04:32:53.970023,0
+73e77d,Classical Notes,A DJ with beats to make you dance all night.,Solo Artist,589,Point,"[-30.5532, -19.3893]",32,3,66,,576491,2024-06-23T04:32:53.970034,2024-06-23T04:32:53.970034,0
+3316e6,Party Beats,A solo artist with a golden voice.,Solo Artist,272,Point,"[-69.9755, -37.138]",6,3,53,,7fefad,2024-08-29T04:32:53.970046,2024-08-29T04:32:53.970046,0
+522e02,Party Beats,Karaoke services to spice up your events.,Orchestra,1308,Point,"[69.8964, -76.8184]",49,5,12,,527144,2024-08-08T04:32:53.970057,2024-08-08T04:32:53.970057,0
+4bd52b,Fun Tunes,An energetic band that brings the house down!,Karaoke Service,763,Point,"[15.7077, 86.753]",38,5,4,,1c2966,2024-05-03T04:32:53.970069,2024-05-03T04:32:53.970069,0
+65a959,Party Beats,Classical music performed by seasoned professionals.,Karaoke Service,1252,Point,"[-141.5528, -38.9692]",14,2,65,,80333c,2024-03-22T04:32:53.970079,2024-03-22T04:32:53.970079,0
+22585a,Fun Tunes,An energetic band that brings the house down!,Band,1153,Point,"[-49.8309, -39.6202]",17,5,42,,34bfa4,2024-03-11T04:32:53.970092,2024-03-11T04:32:53.970092,0
+53bfa6,Fun Tunes,A DJ with beats to make you dance all night.,Karaoke Service,529,Point,"[143.357, 12.1356]",41,5,47,,2059f7,2024-11-01T04:32:53.970103,2024-11-01T04:32:53.970103,0
+350629,Fun Tunes,Classical music performed by seasoned professionals.,Orchestra,900,Point,"[-16.4891, 58.5749]",32,4,31,,942e53,2024-06-25T04:32:53.970114,2024-06-25T04:32:53.970114,0
+85c3c7,Classical Notes,Karaoke services to spice up your events.,Band,601,Point,"[-101.4949, -12.6718]",49,2,2,,931d10,2024-10-06T04:32:53.970125,2024-10-06T04:32:53.970125,0
+1d37c7,Rock n' Rollers,Karaoke services to spice up your events.,Band,493,Point,"[-178.0173, 32.0688]",29,5,61,,15aa59,2024-09-27T04:32:53.970137,2024-09-27T04:32:53.970137,0
+392cd1,Fun Tunes,A DJ with beats to make you dance all night.,Solo Artist,425,Point,"[-127.6986, 37.4496]",49,1,4,,5a2c28,2023-12-08T04:32:53.970150,2023-12-08T04:32:53.970150,0
+8ae543,Fun Tunes,Karaoke services to spice up your events.,Karaoke Service,963,Point,"[166.3656, -60.2915]",20,4,96,,8dd49f,2023-12-08T04:32:53.970161,2023-12-08T04:32:53.970161,0
+8468c4,Melody Makers,Karaoke services to spice up your events.,DJ,871,Point,"[-103.4905, -23.6188]",14,1,23,,89acdd,2024-02-29T04:32:53.970172,2024-02-29T04:32:53.970172,0
+533c58,Party Beats,A solo artist with a golden voice.,Karaoke Service,952,Point,"[16.3092, 64.9267]",34,1,70,,8c7303,2024-03-03T04:32:53.970184,2024-03-03T04:32:53.970184,0
+90de29,Rock n' Rollers,A solo artist with a golden voice.,Solo Artist,495,Point,"[168.0218, 34.9839]",20,3,50,,75d94b,2024-11-10T04:32:53.970195,2024-11-10T04:32:53.970195,0
+735de3,Fun Tunes,An energetic band that brings the house down!,Orchestra,1430,Point,"[36.8804, -70.9849]",46,3,34,,35be1c,2024-07-20T04:32:53.970206,2024-07-20T04:32:53.970206,0
+1802cd,Rock n' Rollers,Karaoke services to spice up your events.,DJ,1273,Point,"[-23.6877, -83.8445]",32,0,43,,4cfd58,2024-05-04T04:32:53.970218,2024-05-04T04:32:53.970218,0
+2118ac,Rock n' Rollers,A DJ with beats to make you dance all night.,Solo Artist,1311,Point,"[-173.8983, 3.4862]",14,0,79,,292f1c,2024-01-20T04:32:53.970233,2024-01-20T04:32:53.970233,0
+2bf879,Rock n' Rollers,A solo artist with a golden voice.,DJ,1278,Point,"[147.5727, 53.749]",50,2,28,,73a0ef,2024-02-27T04:32:53.970250,2024-02-27T04:32:53.970250,0
+32500c,Party Beats,An energetic band that brings the house down!,Karaoke Service,1437,Point,"[-35.0415, 69.0419]",41,0,88,,22a251,2024-02-07T04:32:53.970262,2024-02-07T04:32:53.970262,0
+1ccf17,Party Beats,An energetic band that brings the house down!,Band,1053,Point,"[-128.2637, -71.5116]",42,4,96,,4bca57,2024-04-05T04:32:53.970275,2024-04-05T04:32:53.970275,0
+8bfced,Fun Tunes,Classical music performed by seasoned professionals.,Solo Artist,771,Point,"[20.6304, 13.7828]",48,1,37,,903edb,2024-04-05T04:32:53.970295,2024-04-05T04:32:53.970295,0
+83d89d,Party Beats,A solo artist with a golden voice.,DJ,1197,Point,"[-48.5211, 28.7339]",11,0,35,,1c30ca,2024-06-27T04:32:53.970307,2024-06-27T04:32:53.970307,0
+5eb1f6,Classical Notes,A DJ with beats to make you dance all night.,Solo Artist,946,Point,"[62.032, 15.2364]",49,2,51,,8b6cb5,2024-07-08T04:32:53.970318,2024-07-08T04:32:53.970318,0
+111c32,Rock n' Rollers,Karaoke services to spice up your events.,DJ,430,Point,"[42.7898, -5.7184]",34,1,9,,7060bf,2024-02-08T04:32:53.970329,2024-02-08T04:32:53.970329,0
+7f4672,Classical Notes,A DJ with beats to make you dance all night.,Solo Artist,958,Point,"[-15.2985, -78.2035]",13,3,36,,64c8c2,2024-08-23T04:32:53.970342,2024-08-23T04:32:53.970342,0
+5ed850,Rock n' Rollers,A solo artist with a golden voice.,Solo Artist,1286,Point,"[169.0611, 8.8437]",18,4,67,,893d24,2024-10-13T04:32:53.970353,2024-10-13T04:32:53.970353,0
+252a3f,Party Beats,A DJ with beats to make you dance all night.,Orchestra,877,Point,"[4.0502, 35.1897]",16,5,49,,742f9f,2024-07-03T04:32:53.970365,2024-07-03T04:32:53.970365,0
+1448ff,Rock n' Rollers,Classical music performed by seasoned professionals.,Band,606,Point,"[-99.1556, 25.8638]",25,0,12,,80e077,2024-10-07T04:32:53.970376,2024-10-07T04:32:53.970376,0
+753280,Party Beats,A DJ with beats to make you dance all night.,Solo Artist,970,Point,"[-109.6197, 57.88]",45,1,43,,54c3c2,2024-05-31T04:32:53.970387,2024-05-31T04:32:53.970387,0
+70805b,Fun Tunes,Karaoke services to spice up your events.,DJ,299,Point,"[34.8017, 65.6065]",38,5,15,,2b66dc,2024-12-01T04:32:53.970399,2024-12-01T04:32:53.970399,0
+4df1ce,Classical Notes,Classical music performed by seasoned professionals.,DJ,1262,Point,"[-109.866, -12.8739]",22,1,72,,4bdd82,2024-02-14T04:32:53.970410,2024-02-14T04:32:53.970410,0
+f66b8,Party Beats,An energetic band that brings the house down!,Orchestra,614,Point,"[2.1313, 54.568]",18,1,24,,8ac64c,2024-06-21T04:32:53.970421,2024-06-21T04:32:53.970421,0
+3d9628,Classical Notes,A solo artist with a golden voice.,Orchestra,1217,Point,"[58.3745, -17.0859]",19,5,39,,8efc6e,2024-02-08T04:32:53.970437,2024-02-08T04:32:53.970437,0
+79821e,Fun Tunes,Karaoke services to spice up your events.,DJ,825,Point,"[44.2666, -4.4725]",17,3,89,,8b496e,2024-01-11T04:32:53.970452,2024-01-11T04:32:53.970452,0
+164dbd,Classical Notes,Classical music performed by seasoned professionals.,Orchestra,781,Point,"[147.4233, -41.5338]",28,3,64,,3f34af,2024-03-08T04:32:53.970465,2024-03-08T04:32:53.970465,0
+17ed58,Party Beats,Classical music performed by seasoned professionals.,Solo Artist,1240,Point,"[56.6843, 63.9393]",16,1,99,,3279f7,2024-11-24T04:32:53.970476,2024-11-24T04:32:53.970476,0
+560a42,Fun Tunes,A solo artist with a golden voice.,Band,434,Point,"[-141.3086, -83.53]",26,4,30,,475c74,2024-04-04T04:32:53.970489,2024-04-04T04:32:53.970489,0
+6181f5,Rock n' Rollers,A DJ with beats to make you dance all night.,Band,622,Point,"[147.3354, -37.1099]",39,5,57,,4cfe1f,2024-10-29T04:32:53.970500,2024-10-29T04:32:53.970500,0
+8a105e,Melody Makers,An energetic band that brings the house down!,DJ,1168,Point,"[2.2915, 75.0122]",7,5,100,,7e94ba,2024-11-05T04:32:53.970512,2024-11-05T04:32:53.970512,0
+85699f,Melody Makers,An energetic band that brings the house down!,Solo Artist,814,Point,"[-49.7564, 44.7037]",16,3,94,,2cd2e1,2024-01-07T04:32:53.970522,2024-01-07T04:32:53.970522,0
+271361,Rock n' Rollers,A solo artist with a golden voice.,DJ,932,Point,"[-42.4826, -28.2171]",33,3,18,,79cd5d,2024-03-23T04:32:53.970534,2024-03-23T04:32:53.970534,0
+940fed,Party Beats,A solo artist with a golden voice.,Band,909,Point,"[-17.2943, -62.703]",14,2,19,,5cec4f,2024-11-19T04:32:53.970546,2024-11-19T04:32:53.970546,0
+21ddd9,Rock n' Rollers,An energetic band that brings the house down!,Karaoke Service,340,Point,"[105.1062, 15.7775]",29,1,34,,70b989,2024-07-07T04:32:53.970558,2024-07-07T04:32:53.970558,0
+783ef3,Party Beats,An energetic band that brings the house down!,Orchestra,1115,Point,"[128.6994, 82.694]",27,3,54,,810cd2,2024-09-14T04:32:53.970570,2024-09-14T04:32:53.970570,0
+5acbb2,Melody Makers,Classical music performed by seasoned professionals.,Orchestra,470,Point,"[-88.9813, -46.0129]",40,3,13,,26b5aa,2024-04-24T04:32:53.970581,2024-04-24T04:32:53.970581,0
+87ae12,Fun Tunes,An energetic band that brings the house down!,Band,516,Point,"[-161.7532, -4.4527]",28,0,98,,8b736d,2024-09-04T04:32:53.970593,2024-09-04T04:32:53.970593,0
+960de3,Fun Tunes,A DJ with beats to make you dance all night.,Band,1368,Point,"[75.4163, 12.1805]",9,5,77,,2a8bbd,2024-06-30T04:32:53.970605,2024-06-30T04:32:53.970605,0
+50e3ae,Classical Notes,Karaoke services to spice up your events.,Orchestra,941,Point,"[69.3921, -42.6031]",13,4,30,,5d4486,2024-04-23T04:32:53.970618,2024-04-23T04:32:53.970618,0
+1e7388,Classical Notes,An energetic band that brings the house down!,DJ,847,Point,"[142.6055, -35.549]",25,1,3,,5fa0e9,2024-12-01T04:32:53.970637,2024-12-01T04:32:53.970637,0
+3cd8b5,Classical Notes,An energetic band that brings the house down!,Orchestra,1018,Point,"[160.3188, 7.8774]",22,4,38,,185592,2024-05-18T04:32:53.970653,2024-05-18T04:32:53.970653,0
+854420,Classical Notes,Karaoke services to spice up your events.,Band,1018,Point,"[39.2396, -5.5583]",23,1,30,,616941,2024-08-01T04:32:53.970665,2024-08-01T04:32:53.970665,0
+612344,Party Beats,Karaoke services to spice up your events.,Solo Artist,556,Point,"[68.7288, -0.5662]",18,1,94,,498a24,2023-12-21T04:32:53.970676,2023-12-21T04:32:53.970676,0
+9561ea,Fun Tunes,Karaoke services to spice up your events.,Band,462,Point,"[-120.4242, -85.5207]",13,4,62,,413509,2024-08-26T04:32:53.970703,2024-08-26T04:32:53.970703,0
+6c65fa,Melody Makers,An energetic band that brings the house down!,Solo Artist,1390,Point,"[177.0735, 6.08]",26,4,93,,35131b,2024-05-02T04:32:53.970719,2024-05-02T04:32:53.970719,0
+6fd488,Classical Notes,An energetic band that brings the house down!,Solo Artist,1224,Point,"[-43.8443, 45.395]",50,3,60,,1a412a,2024-10-24T04:32:53.970737,2024-10-24T04:32:53.970737,0
+890ad3,Rock n' Rollers,A solo artist with a golden voice.,Band,1173,Point,"[-88.1467, 62.4287]",15,5,58,,418e70,2024-08-20T04:32:53.970756,2024-08-20T04:32:53.970756,0
+221ab8,Rock n' Rollers,Classical music performed by seasoned professionals.,Orchestra,1358,Point,"[-71.4145, -59.6108]",19,1,20,,31ee88,2023-12-25T04:32:53.970771,2023-12-25T04:32:53.970771,0
+5de63e,Melody Makers,An energetic band that brings the house down!,DJ,202,Point,"[-104.8877, 66.469]",49,4,18,,788ca6,2024-09-01T04:32:53.970789,2024-09-01T04:32:53.970789,0
+2c12d9,Classical Notes,An energetic band that brings the house down!,Karaoke Service,1449,Point,"[29.8564, -55.708]",31,1,97,,70525f,2024-08-25T04:32:53.970804,2024-08-25T04:32:53.970804,0

@@ -4,6 +4,7 @@ import { ExploreServicesComponent } from './pages/explore-services/explore-servi
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FavoritesComponent } from './pages/favorites/favorites.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -11,5 +12,6 @@ export const routes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'favorites', component: FavoritesComponent },
     { path: 'profile', component: ProfileComponent },
+    { path: 'signin', component: SignInComponent },
     { path: '**', redirectTo: '' }
   ];
