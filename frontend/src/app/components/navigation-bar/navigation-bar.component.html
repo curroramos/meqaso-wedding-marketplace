@@ -16,26 +16,38 @@
       <ul class="navbar-nav ms-auto">
         <!-- Always visible -->
         <li class="nav-item">
-          <a class="nav-link active text-white" routerLink="/" routerLinkActive="active">Home</a>
+          <a
+            class="nav-link text-white"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            Home
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" routerLink="/explore" routerLinkActive="active">Explore Services</a>
         </li>
         
-        <!-- Visible only when the user is NOT logged in -->
-        <li class="nav-item" *ngIf="!isLoggedIn">
-          <a class="btn btn-primary me-2 text-white" routerLink="/signin">Sign In</a>
-        </li>
-
-        <!-- Visible only when the user is logged in -->
+        <!-- Visible only when logged in -->
         <li class="nav-item" *ngIf="isLoggedIn">
           <a class="nav-link text-white" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
         </li>
         <li class="nav-item" *ngIf="isLoggedIn">
           <a class="nav-link text-white" routerLink="/profile" routerLinkActive="active">Profile</a>
         </li>
+        
+        <!-- Login/Logout button -->
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="btn btn-primary me-2 text-white" routerLink="/signin" routerLinkActive="active">Sign In</a>
+        </li>
         <li class="nav-item" *ngIf="isLoggedIn">
-          <a class="nav-link logout-link text-white" routerLink="/logout" routerLinkActive="active" (click)="logout()">Logout</a>
+          <a 
+            class="btn btn-danger me-2 text-white" 
+            (click)="logout()"
+          >
+            Logout
+          </a>
         </li>
       </ul>
     </div>

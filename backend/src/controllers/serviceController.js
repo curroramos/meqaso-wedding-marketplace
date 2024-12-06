@@ -2,23 +2,33 @@ const Service = require('../models/Service');
 const Joi = require('joi');
 
 // Build the service query based on the filters
-const buildServiceQuery = ({ category, minPrice, maxPrice, name }) => {
+const buildServiceQuery = ({ categories, minPrice, maxPrice, name }) => {
   const query = {};
 
-  if (category) query.category = category;
-  if (minPrice) query.price = { ...query.price, $gte: Number(minPrice) };
-  if (maxPrice) query.price = { ...query.price, $lte: Number(maxPrice) };
-  if (name) query.title = new RegExp(name, 'i');
+  // Handle categories
+  if (categories.length > 0) {
+    query.category = { $in: categories }; // Match any category in the array
+  }
 
+  if (minPrice) {
+    query.price = { ...query.price, $gte: Number(minPrice) };
+  }
+  if (maxPrice) {
+    query.price = { ...query.price, $lte: Number(maxPrice) };
+  }
+  if (name) {
+    query.title = new RegExp(name, 'i'); // Add case-insensitive name search
+  }
+  
   return query;
 };
 
 // Joi schema for validating query parameters
 const querySchema = Joi.object({
-  category: Joi.string(),
-  minPrice: Joi.number().min(0),
-  maxPrice: Joi.number().min(0),
-  name: Joi.string(),
+  categories: Joi.string().optional(), // Keep as a string since it's JSON-formatted
+  minPrice: Joi.number().min(0).optional(),
+  maxPrice: Joi.number().min(0).optional(),
+  name: Joi.string().optional(),
   limit: Joi.number().integer().min(1).default(10),
   page: Joi.number().integer().min(1).default(1),
 });
@@ -27,9 +37,29 @@ const querySchema = Joi.object({
 exports.getServices = async (req, res) => {
   try {
     const validatedQuery = await querySchema.validateAsync(req.query);
+
+    // Parse categories if it exists
+    let categoriesArray = [];
+    if (validatedQuery.categories) {
+      try {
+        categoriesArray = JSON.parse(validatedQuery.categories); // Convert JSON string to array
+        if (!Array.isArray(categoriesArray)) {
+          throw new Error('categories must be a JSON array');
+        }
+      } catch (error) {
+        return res.status(400).json({ error: 'Invalid JSON format for categories' });
+      }
+    }
+
+    // Destructure other fields, excluding `categories` as it’s already parsed
     const { name, limit, page, ...filters } = validatedQuery;
 
-    const query = buildServiceQuery(filters);
+    // Add parsed categories to the filters
+    const queryFilters = { ...filters, categories: categoriesArray };
+
+    
+    // Build the database query
+    const query = buildServiceQuery(queryFilters);
     const paginationLimit = parseInt(limit, 10);
     const paginationPage = parseInt(page, 10);
 
@@ -43,7 +73,7 @@ exports.getServices = async (req, res) => {
         }
       : {};
 
-    const combinedQuery = { ...query, ...searchQuery };
+    const combinedQuery = { ...query, ...searchQuery};
 
     // Fetch services with pagination and scoring
     const services = await Service.aggregate([

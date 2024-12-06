@@ -2,35 +2,37 @@
   <!-- Filters Section -->
   <aside class="filters">
     <h3>Filters</h3>
-    <div>
-      <label for="category">Category</label>
-      <select id="category" [(ngModel)]="filters.category">
-        <option value="">All</option>
-        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
-      </select>
-    </div>
+  
+    <!-- Categories -->
+<div>
+  <label>Categories</label>
+  <div *ngFor="let category of categories" class="category-checkbox">
+    <mat-checkbox
+      [checked]="selectedCategories[category] || false"
+      (change)="onCategoryChange(category, $event)">
+      {{ category }}
+    </mat-checkbox>
+  </div>
+</div>
+    
 
-    <div>
-      <label>Price Range: ${{ filters.minPrice || 0 }} - ${{ filters.maxPrice || 1000 }}</label>
-      <input
-        type="range"
-        [(ngModel)]="filters.minPrice"
-        min="0"
-        max="1000"
-        step="10"
-      />
-      <input
-        type="range"
-        [(ngModel)]="filters.maxPrice"
-        min="0"
-        max="1000"
-        step="10"
-      />
-    </div>
+  
+    <!-- Price Range -->
+<div *ngIf="isBrowser">
+  <label>Price Range ($):</label>
+  <ngx-slider
+    [(value)]="minPrice"
+    [(highValue)]="maxPrice"
+    [options]="sliderOptions"
+    (userChangeEnd)="onPriceChange($event)"
+  ></ngx-slider>
+</div>
 
-    <button (click)="applyFilters()">Apply Filters</button>
-    <button (click)="resetFilters()">Reset Filters</button>
+  
+    <!-- Buttons -->
+    <button class="reset-button" (click)="resetFilters()">Reset Filters</button>
   </aside>
+  
 
   <!-- Main Content -->
   <main>
@@ -44,17 +46,38 @@
       <button (click)="search()">Search</button>
     </div>
 
-    <!-- Services List -->
     <div class="services-list">
-      <div class="service-card" *ngFor="let service of services">
-        <img *ngIf="service.photoUrl" [src]="service.photoUrl" alt="Service Image" />
-        <h4>{{ service.title }}</h4>
-        <p>{{ service.description }}</p>
-        <p><strong>Category:</strong> {{ service.category }}</p>
-        <p><strong>Price:</strong> ${{ service.price }}</p>
-        <p><strong>Rating:</strong> {{ service.rating }}</p>
-      </div>
+      <mat-card class="service-card" *ngFor="let service of services">
+        <div class="service-content">
+          <mat-card-content class="service-info">
+            <mat-card-title>{{ service.title }}</mat-card-title>
+            <mat-card-subtitle>{{ service.category }}</mat-card-subtitle>
+            <p class="service-description">{{ service.description }}</p>
+            <p><strong>Price:</strong> ${{ service.price }}</p>
+            <div class="service-rating">
+              <mat-icon>star</mat-icon>
+              <mat-icon *ngFor="let star of [].constructor(service.rating); let i = index">
+                star
+              </mat-icon>
+            </div>
+            <mat-card-actions>
+              <button mat-raised-button color="primary">View Details</button>
+              <button mat-button color="accent">Add to Cart</button>
+            </mat-card-actions>
+          </mat-card-content>
+          <div class="service-image-container">
+            <img
+              *ngIf="service.photoUrl"
+              [src]="service.photoUrl"
+              alt="Service Image"
+              class="service-image"
+            />
+            <div *ngIf="!service.photoUrl" class="service-image-placeholder"></div>
+          </div>
+        </div>
+      </mat-card>
     </div>
+    
 
     <!-- Pagination -->
     <div class="pagination">

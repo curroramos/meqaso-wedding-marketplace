@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -9,21 +11,24 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './navigation-bar.component.html',
   styleUrls: ['./navigation-bar.component.css'],
 })
-export class NavigationBarComponent {
+export class NavigationBarComponent implements OnDestroy {
   isLoggedIn: boolean = false;
+  private authSubscription: Subscription;
 
-  constructor(private router: Router) {
-    this.checkAuthStatus();
-  }
-
-  checkAuthStatus() {
-    // IMPLEMENT
-    // this.isLoggedIn = !!localStorage.getItem('authToken');
+  constructor(private router: Router, private authService: AuthService) {
+    this.authSubscription = this.authService.authStatus$.subscribe(
+      (status) => {
+        this.isLoggedIn = status;
+      }
+    );
   }
 
   logout() {
-    localStorage.removeItem('authToken');
-    this.isLoggedIn = false;
+    this.authService.removeToken();
     this.router.navigate(['/']);
+  }
+
+  ngOnDestroy(): void {
+    this.authSubscription.unsubscribe();
   }
 }
