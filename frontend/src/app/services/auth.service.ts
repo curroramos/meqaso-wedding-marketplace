@@ -7,10 +7,22 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class AuthService {
   private readonly TOKEN_KEY = 'authToken';
-  private authStatusSubject = new BehaviorSubject<boolean>(this.isLoggedIn());
-  authStatus$: Observable<boolean> = this.authStatusSubject.asObservable();
+  private authStatusSubject: BehaviorSubject<boolean>;
+  authStatus$: Observable<boolean>;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {
+    // Initialize the BehaviorSubject with the current token state
+    const initialStatus = this.checkToken();
+    this.authStatusSubject = new BehaviorSubject<boolean>(initialStatus);
+    this.authStatus$ = this.authStatusSubject.asObservable();
+  }
+
+  private checkToken(): boolean {
+    if (isPlatformBrowser(this.platformId)) {
+      return !!localStorage.getItem(this.TOKEN_KEY); // Return true if token exists
+    }
+    return false;
+  }
 
   saveToken(token: string): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -23,7 +35,7 @@ export class AuthService {
     if (isPlatformBrowser(this.platformId)) {
       return localStorage.getItem(this.TOKEN_KEY);
     }
-    return null; // Return null if not in browser
+    return null;
   }
 
   removeToken(): void {
@@ -34,6 +46,6 @@ export class AuthService {
   }
 
   isLoggedIn(): boolean {
-    return !!this.getToken();
+    return this.checkToken();
   }
 }

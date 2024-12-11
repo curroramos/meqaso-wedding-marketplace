@@ -23,12 +23,14 @@ export class NavigationBarComponent implements OnDestroy {
     );
   }
 
-  logout() {
+  logout(): void {
     this.authService.removeToken();
-    this.router.navigate(['/']);
+    this.router.navigate(['/']); // Navigate to the home page after logout
   }
 
   ngOnDestroy(): void {
-    this.authSubscription.unsubscribe();
+    if (this.authSubscription) {
+      this.authSubscription.unsubscribe();
+    }
   }
 }

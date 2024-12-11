@@ -1,1 +1,79 @@
-<p>profile works!</p>
+<div class="profile-page mat-elevation-z4">
+  <!-- Error Message -->
+  <div *ngIf="errorMessage" class="error">
+    <mat-card class="mat-elevation-z2">
+      <mat-card-content>
+        <mat-icon color="warn">error</mat-icon> {{ errorMessage }}
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- Profile Section -->
+  <div *ngIf="userProfile">
+    <mat-card class="profile-header mat-elevation-z4">
+      <mat-card-header>
+        <div mat-card-avatar class="profile-avatar"></div>
+        <mat-card-title>{{ userProfile.name }}</mat-card-title>
+        <mat-card-subtitle>{{ userProfile.location }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p><strong>Bio:</strong> {{ userProfile.bio }}</p>
+        <p><strong>Email:</strong> <a href="mailto:{{ userProfile.email }}">{{ userProfile.email }}</a></p>
+        <p><strong>Categories:</strong> {{ userProfile.categories?.join(', ') }}</p>
+        <p><strong>Website:</strong> 
+          <a [href]="userProfile.website" target="_blank" rel="noopener">{{ userProfile.website }}</a>
+        </p>
+        <p><strong>Hourly Rate:</strong> ${{ userProfile.hourlyRate }}</p>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Gallery Section -->
+    <mat-card class="gallery-section mat-elevation-z4">
+      <mat-card-title>Gallery</mat-card-title>
+      <mat-card-content>
+        <div *ngIf="userProfile.gallery?.length > 0; else noGallery" class="gallery-grid">
+          <div *ngFor="let image of userProfile.gallery" class="gallery-item">
+            <img [src]="image" alt="Gallery Image" class="gallery-image mat-elevation-z2" />
+          </div>
+        </div>
+        <ng-template #noGallery>
+          <p>No gallery images available.</p>
+        </ng-template>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Services Section -->
+    <h2>Services</h2>
+    <div class="services-list">
+      <mat-card class="service-card" *ngFor="let service of userServices">
+        <div class="service-content">
+          <mat-card-content class="service-info">
+            <mat-card-title>{{ service.title }}</mat-card-title>
+            <mat-card-subtitle>{{ service.category }}</mat-card-subtitle>
+            <p class="service-description">{{ service.description }}</p>
+            <p><strong>Price:</strong> ${{ service.price }}</p>
+            <div class="service-rating">
+              <mat-icon *ngFor="let star of [].constructor(service.rating); let i = index">
+                star
+              </mat-icon>
+            </div>
+            <mat-card-actions>
+              <button mat-raised-button color="primary">View Details</button>
+              <button mat-button color="accent">Add to Cart</button>
+            </mat-card-actions>
+          </mat-card-content>
+          <div class="service-image-container">
+            <img
+              *ngIf="service.photoUrl"
+              [src]="service.photoUrl"
+              alt="Service Image"
+              class="service-image"
+            />
+            <div *ngIf="!service.photoUrl" class="service-image-placeholder"></div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+
+</div>
