@@ -37,15 +37,15 @@ exports.serviceDTO = (service) => {
     if (!service) return null;
   
     return {
-      id: service._id, // Use `id` instead of `_id`
+      id: service._id,
       title: service.title,
       description: service.description,
       category: service.category,
       price: service.price,
       rating: service.rating || 0,
       reviewCount: service.reviewCount || 0,
-      photoUrl: service.photoUrl || null, // Optional field
-      providerId: service.provider, // Only expose provider's ID
+      photoUrl: service.photoUrl || null,
+      providerId: service.provider,
       createdAt: service.createdAt,
       updatedAt: service.updatedAt,
     };
