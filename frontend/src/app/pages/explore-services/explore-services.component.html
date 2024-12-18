@@ -2,88 +2,95 @@
   <!-- Filters Section -->
   <aside class="filters">
     <h3>Filters</h3>
-  
-    <!-- Categories -->
-<div>
-  <label>Categories</label>
-  <div *ngFor="let category of categories" class="category-checkbox">
-    <mat-checkbox
-      [checked]="selectedCategories[category] || false"
-      (change)="onCategoryChange(category, $event)">
-      {{ category }}
-    </mat-checkbox>
-  </div>
-</div>
     
-
-  
+    <!-- Categories -->
+    <div>
+      <label>Categories</label>
+      <div *ngFor="let category of categories" class="category-checkbox">
+        <mat-checkbox
+          [checked]="selectedCategories[category] || false"
+          (change)="onCategoryChange(category, $event)">
+          {{ category }}
+        </mat-checkbox>
+      </div>
+    </div>
+    
     <!-- Price Range -->
-<div *ngIf="isBrowser">
-  <label>Price Range ($):</label>
-  <ngx-slider
-    [(value)]="minPrice"
-    [(highValue)]="maxPrice"
-    [options]="sliderOptions"
-    (userChangeEnd)="onPriceChange($event)"
-  ></ngx-slider>
-</div>
-
-  
+    <div *ngIf="isBrowser">
+      <label>Price Range ($):</label>
+      <ngx-slider
+        [(value)]="minPrice"
+        [(highValue)]="maxPrice"
+        [options]="sliderOptions"
+        (userChangeEnd)="onPriceChange($event)"
+      ></ngx-slider>
+    </div>
+    
     <!-- Buttons -->
     <button class="reset-button" (click)="resetFilters()">Reset Filters</button>
   </aside>
-  
 
-  <!-- Main Content -->
-  <main>
-    <!-- Search Bar -->
-    <div class="search-bar">
-      <input
-        type="text"
-        [(ngModel)]="searchQuery"
-        placeholder="Search services..."
-      />
-      <button (click)="search()">Search</button>
-    </div>
+  <!-- Full-Width Container -->
+  <div class="full-width-container">
+    <main>
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input
+          type="text"
+          [(ngModel)]="searchQuery"
+          placeholder="Search services..."
+        />
+        <button (click)="search()">Search</button>
+      </div>
 
-    <div class="services-list">
-      <mat-card class="service-card" *ngFor="let service of services">
-        <div class="service-content">
-          <mat-card-content class="service-info">
-            <mat-card-title>{{ service.title }}</mat-card-title>
-            <mat-card-subtitle>{{ service.category }}</mat-card-subtitle>
-            <p class="service-description">{{ service.description }}</p>
-            <p><strong>Price:</strong> ${{ service.price }}</p>
-            <div class="service-rating">
-              <mat-icon>star</mat-icon>
-              <mat-icon *ngFor="let star of [].constructor(service.rating); let i = index">
-                star
-              </mat-icon>
+      <div class="services-list">
+        <mat-card class="service-card" *ngFor="let service of services">
+          <div class="service-content">
+            <mat-card-content class="service-info">
+              <mat-card-title>{{ service.title }}</mat-card-title>
+              <mat-card-subtitle>{{ service.category }}</mat-card-subtitle>
+              <p class="service-description">{{ service.description }}</p>
+              <p><strong>Price:</strong> ${{ service.price }}</p>
+              <div class="service-rating">
+                <mat-icon>star</mat-icon>
+                <mat-icon
+                  *ngFor="let star of [].constructor(service.rating); let i = index">
+                  star
+                </mat-icon>
+              </div>
+              <mat-card-actions>
+                <button
+                  mat-raised-button
+                  color="primary"
+                  [routerLink]="['/service-details', service.id]">
+                  View Details
+                </button>
+                <button mat-button color="accent">Add to Cart</button>
+              </mat-card-actions>
+            </mat-card-content>
+            <div class="service-image-container">
+              <img
+                *ngIf="service.photoUrl"
+                [src]="service.photoUrl"
+                alt="Service Image"
+                class="service-image"
+              />
+              <div *ngIf="!service.photoUrl" class="service-image-placeholder"></div>
             </div>
-            <mat-card-actions>
-              <button mat-raised-button color="primary">View Details</button>
-              <button mat-button color="accent">Add to Cart</button>
-            </mat-card-actions>
-          </mat-card-content>
-          <div class="service-image-container">
-            <img
-              *ngIf="service.photoUrl"
-              [src]="service.photoUrl"
-              alt="Service Image"
-              class="service-image"
-            />
-            <div *ngIf="!service.photoUrl" class="service-image-placeholder"></div>
           </div>
-        </div>
-      </mat-card>
-    </div>
-    
+        </mat-card>
+      </div>
 
-    <!-- Pagination -->
-    <div class="pagination">
-      <button [disabled]="currentPage <= 1" (click)="changePage(currentPage - 1)">Previous</button>
-      <span>Page {{ currentPage }} of {{ totalPages }}</span>
-      <button [disabled]="currentPage >= totalPages" (click)="changePage(currentPage + 1)">Next</button>
-    </div>
-  </main>
+      <!-- Pagination -->
+      <div class="pagination">
+        <button
+          [disabled]="currentPage <= 1"
+          (click)="changePage(currentPage - 1)">Previous</button>
+        <span>Page {{ currentPage }} of {{ totalPages }}</span>
+        <button
+          [disabled]="currentPage >= totalPages"
+          (click)="changePage(currentPage + 1)">Next</button>
+      </div>
+    </main>
+  </div>
 </div>

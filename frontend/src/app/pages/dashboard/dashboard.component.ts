@@ -18,9 +18,5 @@ export class DashboardComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      this.token = this.authService.getToken(); // Retrieve the token
-      console.log('Stored Token:', this.token); // Optional: Log the token
-    }
   }
 }

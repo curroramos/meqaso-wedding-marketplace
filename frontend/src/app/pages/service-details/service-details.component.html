@@ -1,0 +1,43 @@
+<div class="service-details" *ngIf="service; else loading">
+    <div class="service-header">
+      <h1>{{ service.title }}</h1>
+      <img
+        *ngIf="service.photoUrl"
+        [src]="service.photoUrl"
+        alt="{{ service.title }}"
+        class="service-photo"
+      />
+    </div>
+  
+    <div class="service-info">
+      <p><strong>Category:</strong> {{ service.category }}</p>
+      <p><strong>Description:</strong> {{ service.description }}</p>
+      <p><strong>Price:</strong> ${{ service.price }}</p>
+      <p>
+        <strong>Location:</strong>
+        Latitude: {{ service.location.coordinates[1] }},
+        Longitude: {{ service.location.coordinates[0] }}
+      </p>
+      <p><strong>Radius:</strong> {{ service.radius || 'N/A' }} km</p>
+      <p><strong>Rating:</strong> {{ service.rating || 'No ratings yet' }}</p>
+      <p><strong>Reviews:</strong> {{ service.reviewCount || 0 }}</p>
+    </div>
+  
+    <div class="service-reviews">
+      <h2>Reviews</h2>
+      <div *ngIf="reviews.length > 0; else noReviews">
+        <div class="review" *ngFor="let review of reviews">
+          <p><strong>{{ review.reviewer }}</strong> - {{ review.rating }}/5</p>
+          <p>{{ review.comment }}</p>
+          <small>{{ review.date | date: 'short' }}</small>
+        </div>
+      </div>
+      <ng-template #noReviews>
+        <p>No reviews available.</p>
+      </ng-template>
+    </div>
+  </div>
+  
+  <ng-template #loading>
+    <p>Loading service details...</p>
+  </ng-template>

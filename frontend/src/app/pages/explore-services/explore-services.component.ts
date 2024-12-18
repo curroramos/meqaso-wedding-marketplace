@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSliderModule } from '@angular/material/slider';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-explore-services',
@@ -26,6 +27,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatIconModule,
     MatInputModule,
     MatSliderModule,
+    RouterModule
   ],
   templateUrl: './explore-services.component.html',
   styleUrls: ['./explore-services.component.css']
@@ -100,7 +102,6 @@ export class ExploreServicesComponent implements OnInit {
   }
 
   fetchServices() {
-    console.log('Fetching services with filters:', this.filters);
     this.loading = true;
     let params = new HttpParams()
       .set('page', this.currentPage.toString())

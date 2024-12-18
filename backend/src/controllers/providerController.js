@@ -89,7 +89,6 @@ exports.getUserServices = async (req, res) => {
 
     // Fetch services for the user
     const services = await Service.find({ provider: userId }).populate('provider');
-    console.log(services);
 
     res.status(200).json(services);
   } catch (error) {

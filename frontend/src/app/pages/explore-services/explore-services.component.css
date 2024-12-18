@@ -1,19 +1,34 @@
 /* General Layout */
 .explore-services {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 1rem;
+  gap: 1rem;
   background-color: #f9f9f9;
 }
 
 /* Filters Section */
 .filters {
-  flex: 1 1 250px;
-  max-width: 300px;
+  flex: 0 0 300px; /* Fixed width for the filters section */
   padding: 1.5rem;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+/* Full-Width Container */
+.full-width-container {
+  flex: 1; /* Take up the remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  max-width: 100%;
+  padding: 1rem;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -153,16 +168,29 @@
 }
 
 /* Services List */
-.services-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
+.container {
+  width: 100%;
+  max-width: 100%; /* Prevents constraints */
+  margin: 0 auto; /* Center-align if needed */
 }
 
+.services-list {
+  display: flex;
+  flex-direction: column; /* Stack the cards vertically */
+  gap: 1.5rem; /* Space between cards */
+  padding: 1rem;
+  width: 100%; /* Ensure the list spans the full width */
+  max-width: 100%; /* Prevent shrinking */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Service Card */
 .service-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Align image and info side-by-side */
+  width: 100%; /* Card spans the full width of its container */
+  max-width: 100%; /* Prevent shrinking */
+  box-sizing: border-box; /* Include padding and border in width */
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -174,35 +202,44 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Service Content */
 .service-content {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  width: 100%; /* Ensure content fills the card */
 }
 
+/* Service Info */
 .service-info {
-  flex: 2;
+  flex: 1; /* Allow the info section to take up remaining space */
   display: flex;
   flex-direction: column;
 }
 
+/* Service Image Container */
 .service-image-container {
-  flex: 1;
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 200px; /* Consistent width for the image */
+  height: 150px; /* Consistent height for the image */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Service Image */
 .service-image {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits nicely */
   border-radius: 8px;
   border: 1px solid #ddd;
 }
 
+/* Placeholder for Missing Image */
 .service-image-placeholder {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   background-color: #ccc;
   border: 1px solid #ddd;
   display: flex;
@@ -211,42 +248,26 @@
   border-radius: 8px;
 }
 
+/* Service Description */
 .service-description {
   font-size: 0.9rem;
   color: #555;
   margin-bottom: 0.5rem;
 }
 
+/* Service Rating */
 .service-rating {
   display: flex;
   gap: 2px;
 }
 
+/* Actions */
 .mat-card-actions {
   margin-top: 1rem;
   display: flex;
   gap: 0.5rem;
 }
 
-.provider-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  gap: 0.5rem;
-}
-
-.provider-image {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-}
-
-.provider-name {
-  font-size: 0.9rem;
-  color: #333;
-  font-weight: 500;
-}
 
 /* Pagination */
 .pagination {

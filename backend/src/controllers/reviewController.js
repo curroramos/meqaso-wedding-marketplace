@@ -58,6 +58,7 @@ exports.getReviews = async (req, res) => {
 
   try {
     const reviews = await Review.find({ service: serviceId }).populate('client', 'name');
+    console.log(reviews)
     res.json(reviews);
   } catch (error) {
     res.status(500).json({ message: 'Failed to fetch reviews', error });

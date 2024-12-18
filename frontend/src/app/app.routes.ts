@@ -6,6 +6,7 @@ import { FavoritesComponent } from './pages/favorites/favorites.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { ServiceDetailsComponent } from './pages/service-details/service-details.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -15,5 +16,6 @@ export const routes: Routes = [
     { path: 'profile', component: ProfileComponent },
     { path: 'signin', component: SignInComponent },
     { path: 'signup', component: SignUpComponent },
+    { path: 'service-details/:id', component: ServiceDetailsComponent },
     { path: '**', redirectTo: '' }
   ];

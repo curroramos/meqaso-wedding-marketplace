@@ -50,10 +50,7 @@ exports.googleLogin = async (req, res) => {
   const { tokenId } = req.body;
 
   try {
-    console.log('Google Login Request Received:', { tokenId });
-
     const { email, sub: googleId } = await verifyGoogleToken(tokenId);
-    console.log('Google Token Verified:', { email, googleId });
 
     const user = await User.findOne({ googleId });
     if (!user) {
@@ -62,7 +59,6 @@ exports.googleLogin = async (req, res) => {
     }
 
     const token = jwt.generateToken(user._id);
-    console.log('Google Login Successful:', user._id);
     res.status(200).json({ token, user: { id: user._id, name: user.name, email: user.email } });
   } catch (error) {
     console.error('Error during Google Login:', error.message);

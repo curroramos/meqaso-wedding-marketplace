@@ -142,3 +142,24 @@ exports.getCategories = async (req, res) => {
     res.status(500).json({ message: "Failed to fetch categories", error: error.message });
   }
 };
+
+// Controller to fetch a service by ID
+exports.getServiceById = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    // Fetch the service by ID
+    const service = await Service.findById(id).populate('provider'); // Assuming `provider` is a reference
+
+    if (!service) {
+      return res.status(404).json({ message: 'Service not found' });
+    }
+
+    res.status(200).json(service);
+  } catch (error) {
+    res.status(500).json({
+      message: 'Failed to fetch service',
+      error: error.message,
+    });
+  }
+};
